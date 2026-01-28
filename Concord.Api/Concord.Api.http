@@ -1,0 +1,6 @@
+@Concord.Api_HostAddress = http://localhost:5196
+
+GET {{Concord.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
