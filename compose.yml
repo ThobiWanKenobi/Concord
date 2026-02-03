@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: meetingplanner-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: meetingplanner
+      POSTGRES_USER: meetingplanner
+      POSTGRES_PASSWORD: meetingplanner
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
