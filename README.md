@@ -1,3 +1,6 @@
+# How to run the database
+`podman-compose up -d`
+
 # Dependency direction
 Blazor → Api → Application → Domain
 
